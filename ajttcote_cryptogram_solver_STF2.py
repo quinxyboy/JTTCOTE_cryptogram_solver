@@ -29,8 +29,11 @@ tokens = word_tokenize(raw)
 # get index of starting word in cryptogram
 start = tokens.index('mm.rnlls')
 
+# get index of starting word in cryptogram
+end = tokens.index('KediiY')
+
 # gets crpytogram words and reformats to correct syntax
-words = tokens[start:start+25]
+words = tokens[start:end+1]
 
 #strip first m from first word in the list using slicing
 words[0] = words[0][1:]
