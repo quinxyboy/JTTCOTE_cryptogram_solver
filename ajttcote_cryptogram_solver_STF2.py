@@ -30,7 +30,7 @@ tokens = word_tokenize(raw)
 start = tokens.index('mm.rnlls')
 
 # gets crpytogram words and reformats to correct syntax
-words = tokens[3001:3026]
+words = tokens[start:start+25]
 
 #strip first m from first word in the list using slicing
 words[0] = words[0][1:]
